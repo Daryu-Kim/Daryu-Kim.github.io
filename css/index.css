@@ -52,7 +52,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg,rgba(0, 0, 0, 0.75) 0,rgba(0, 0, 0, 0.75) 90%),url("../images/content-summary-bg.jpg") 50% no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0.75) 90%), url("../images/content-summary-bg.jpg") 50% no-repeat;
 }
 
 .content-summary-title {
@@ -98,12 +98,12 @@ body {
 
 .content-aboutme {
     background-color: #101010;
-    height: 400px;
+    height: fit-content;
 }
 
 .content-aboutme-title {
     margin: auto;
-    padding-top: 24px;
+    padding: 64px 0;
     /* width: fit-content; */
     display: flex;
     justify-content: center;
@@ -112,16 +112,96 @@ body {
 
 .content-aboutme-title-side {
     width: 3vmax;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content-aboutme-title-main {
+    vertical-align: middle;
+    text-align: center;
 }
 
 .content-aboutme-title-img {
     margin-right: 12px;
-    width: 3vmax;
 }
 
 .content-aboutme-title-text {
     font-weight: 900;
-    font-size: 3.25vmax;
-    line-height: 5vmax;
+    /* font-size: 3.25vmax; */
     border-bottom: 1.5px solid #444;
+}
+
+.content-aboutme-title-img {
+    width: 28px;
+}
+
+.content-aboutme-title-text {
+    font-size: 28px;
+}
+
+.content-aboutme-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-aboutme-content-table {
+    height: 96px;
+    padding: 12px 24px;
+    vertical-align: middle;
+}
+
+.content-aboutme-content-img {
+    width: 40%;
+}
+
+.content-aboutme-content-img img {
+    width: 36px;
+}
+
+.content-aboutme-content-title,
+.content-aboutme-content-content {
+    width: 60%;
+}
+
+.content-aboutme-content-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.content-aboutme-content-content {
+    font-size: 16px;
+}
+
+.content-aboutme-marbo {
+    padding-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+    .content-aboutme-content-table {
+        width: 240px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-aboutme-title-img {
+        width: 36px;
+    }
+
+    .content-aboutme-title-text {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-aboutme-title-img {
+        width: 44px;
+    }
+
+    .content-aboutme-title-text {
+        font-size: 44px;
+    }
 }
