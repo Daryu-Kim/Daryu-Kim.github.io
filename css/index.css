@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard';
+}
+
+body {
+    background-color: white;
+    color: white;
+
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.header {
+    background-color: #202020;
+    height: fit-content;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-menu-img {
+    width: 36px;
+}
+
+.content-summary {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.75) 0,rgba(0, 0, 0, 0.75) 90%),url("../images/content-summary-bg.jpg") 50% no-repeat;
+}
+
+.content-summary-title {
+    margin-top: 72px;
+    font-weight: 900;
+    font-size: 52px;
+    text-align: center;
+    line-height: 64px;
+    width: 100%;
+    max-lines: 2;
+}
+
+.content-summary-border {
+    border-bottom: 4px solid #444;
+    width: 64px;
+    border-radius: 4px;
+}
+
+.content-summary-text {
+    padding: 0 36px;
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+    font-size: large;
+}
+
+.content-summary-btn {
+    width: 172px;
+    height: 56px;
+    background-color: #444;
+    border-radius: 28px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.content-summary-btn-text {
+    text-shadow: 1px 1px 2px #000;
+    font-weight: bold;
+}
+
+.content-aboutme {
+    background-color: #101010;
+    height: 400px;
+}
+
+.content-aboutme-title {
+    margin: auto;
+    padding-top: 24px;
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-aboutme-title-side {
+    width: 3vmax;
+}
+
+.content-aboutme-title-img {
+    margin-right: 12px;
+    width: 3vmax;
+}
+
+.content-aboutme-title-text {
+    font-weight: 900;
+    font-size: 3.25vmax;
+    line-height: 5vmax;
+    border-bottom: 1.5px solid #444;
+}
