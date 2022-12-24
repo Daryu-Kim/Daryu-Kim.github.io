@@ -187,6 +187,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .content-aboutme-content-table {
+        width: 240px;
+    }
+
     .content-aboutme-title-img {
         width: 36px;
     }
@@ -197,6 +201,10 @@ body {
 }
 
 @media (min-width: 992px) {
+    .content-aboutme-content-table {
+        width: 240px;
+    }
+    
     .content-aboutme-title-img {
         width: 44px;
     }
