@@ -21,6 +21,7 @@ body {
     -moz-user-select: none;
 }
 
+/* HEADER */
 .header {
     background-color: #202020;
     height: fit-content;
@@ -45,6 +46,8 @@ body {
     width: 36px;
 }
 
+/* CONTENT */
+/* CONTENT-SUMMARY */
 .content-summary {
     width: 100%;
     height: 560px;
@@ -63,6 +66,7 @@ body {
     line-height: 64px;
     width: 100%;
     max-lines: 2;
+    word-break: keep-all;
 }
 
 .content-summary-border {
@@ -77,6 +81,7 @@ body {
     text-align: center;
     line-height: 28px;
     font-size: large;
+    word-break: keep-all;
 }
 
 .content-summary-btn {
@@ -96,6 +101,7 @@ body {
     font-weight: bold;
 }
 
+/* CONTENT-ABOUTME */
 .content-aboutme {
     background-color: #101010;
     height: fit-content;
@@ -110,12 +116,6 @@ body {
     align-items: center;
 }
 
-.content-aboutme-title-side {
-    width: 3vmax;
-    vertical-align: middle;
-    text-align: center;
-}
-
 .content-aboutme-title-main {
     vertical-align: middle;
     text-align: center;
@@ -123,19 +123,13 @@ body {
 
 .content-aboutme-title-img {
     margin-right: 12px;
+    width: 28px;
 }
 
 .content-aboutme-title-text {
     font-weight: 900;
     /* font-size: 3.25vmax; */
     border-bottom: 1.5px solid #444;
-}
-
-.content-aboutme-title-img {
-    width: 28px;
-}
-
-.content-aboutme-title-text {
     font-size: 28px;
 }
 
@@ -144,20 +138,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 }
 
 .content-aboutme-content-table {
-    height: 96px;
-    padding: 12px 24px;
+    height: 72px;
     vertical-align: middle;
+    margin-bottom: 28px;
 }
 
 .content-aboutme-content-img {
-    width: 40%;
+    width: 36px;
+    text-align: end;
 }
 
 .content-aboutme-content-img img {
     width: 36px;
+    margin-right: 24px;
 }
 
 .content-aboutme-content-title,
@@ -173,22 +171,52 @@ body {
 
 .content-aboutme-content-content {
     font-size: 16px;
+    word-break: break-all;
 }
 
-.content-aboutme-marbo {
-    padding-bottom: 64px;
+/* FOOTER */
+.footer {
+    background-color: #202020;
+    height: fit-content;
+    padding: 36px 28px;
+    text-align: center;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 152px;
+    margin: auto;
+}
+
+.footer-link-img {
+    width: 42px;
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    font-size: 14px;
 }
 
 @media (max-width: 767px) {
     .content-aboutme-content-table {
-        width: 240px;
+        width: 80%;
+    }
+
+    .content-aboutme-title-text {
+        font-size: 32px;
+    }
+
+    .aboutme-mobile {
+        margin-bottom: 64px;
     }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .content-aboutme-content-table {
-        width: 240px;
+        width: 40%;
     }
 
     .content-aboutme-title-img {
@@ -196,20 +224,28 @@ body {
     }
 
     .content-aboutme-title-text {
-        font-size: 36px;
+        font-size: 40px;
+    }
+
+    .aboutme-tablet {
+        margin-bottom: 64px;
     }
 }
 
 @media (min-width: 992px) {
     .content-aboutme-content-table {
-        width: 240px;
+        width: 30%;
     }
-    
+
     .content-aboutme-title-img {
         width: 44px;
     }
 
     .content-aboutme-title-text {
-        font-size: 44px;
+        font-size: 48px;
+    }
+
+    .aboutme-desktop {
+        margin-bottom: 64px;
     }
 }
