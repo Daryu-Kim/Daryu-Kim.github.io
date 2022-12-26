@@ -334,6 +334,7 @@ hr {
         margin: 0 15%;
         padding: 48px;
         line-height: 32px;
+        word-break: keep-all;
     }
 
     .archive-mobile {
