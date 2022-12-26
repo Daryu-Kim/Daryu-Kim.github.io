@@ -9,14 +9,14 @@
     <meta name="description" content="개발에 미쳐있는 웹 && 앱 개발자인 김원재의 포트폴리오입니다!">
     <meta property="og:title" content="김원재 포트폴리오 :: Daryu-Kim's PortFolio">
     <meta property="og:description" content="개발에 미쳐있는 웹 && 앱 개발자인 김원재의 포트폴리오입니다">
-    <meta property="og:image" content="./images/header-icon.jpeg">
+    <meta property="og:image" content="./images/icon.jpeg">
     <meta property="og:site_name" content="김원재 포트폴리오 :: Daryu-Kim's PortFolio">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://daryu-kim.github.io/">
     <meta name="author" content="Daryu-Kim">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/header-icon.jpeg">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpeg">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         <div class="header">
             <h2 class="header-title">Daryu-Kim's PortFolio</h2>
             <div class="header-menu">
-                <img class="header-menu-img" src="./images/header-menu-img.svg">
+                <img class="header-menu-img" src="./images/index/header/menu/header-menu-img.svg">
             </div>
         </div>
 
@@ -38,10 +38,10 @@
                     한번을 하더라도 완벽하게, 그리고 문제 해결 및 유지 보수를 위한 공부를 끊임없이 하는 점이 저의 장점입니다.
                 </p>
                 <div class="content-summary-btn">
-                    <p class="content-summary-btn-text">더 알아보기 ↓</p>
+                    <a href="#content-aboutme" class="content-summary-btn-text">더 알아보기 ↓</a>
                 </div>
             </div>
-            <div class="content-aboutme">
+            <div class="content-aboutme" id="content-aboutme">
                 <table class="content-title">
                     <tr>
                         <td class="content-aboutme-title-main">
@@ -54,7 +54,8 @@
                     <table class="content-aboutme-content-table">
                         <tr>
                             <td class="content-aboutme-content-img" rowspan="2">
-                                <img src="./images/content-aboutme-content-name-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-name-img.svg"
+                                    alt="name">
                             </td>
                             <td class="content-aboutme-content-title">이름</td>
                         </tr>
@@ -65,7 +66,8 @@
                     <table class="content-aboutme-content-table">
                         <tr>
                             <td class="content-aboutme-content-img img-bigsize" rowspan="2">
-                                <img src="./images/content-aboutme-content-birthday-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-birthday-img.svg"
+                                    alt="birth">
                             </td>
                             <td class="content-aboutme-content-title">생년월일</td>
                         </tr>
@@ -76,7 +78,8 @@
                     <table class="content-aboutme-content-table">
                         <tr>
                             <td class="content-aboutme-content-img" rowspan="2">
-                                <img src="./images/content-aboutme-content-location-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-location-img.svg"
+                                    alt="location">
                             </td>
                             <td class="content-aboutme-content-title">주소지</td>
                         </tr>
@@ -87,7 +90,8 @@
                     <table class="content-aboutme-content-table aboutme-desktop">
                         <tr>
                             <td class="content-aboutme-content-img" rowspan="2">
-                                <img src="./images/content-aboutme-content-phone-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-phone-img.svg"
+                                    alt="phone">
                             </td>
                             <td class="content-aboutme-content-title">연락처</td>
                         </tr>
@@ -102,15 +106,17 @@
                     <table class="content-aboutme-content-table aboutme-tablet aboutme-desktop">
                         <tr>
                             <td class="content-aboutme-content-img" rowspan="2">
-                                <img src="./images/content-aboutme-content-email-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-email-img.svg"
+                                    alt="email">
                             </td>
                             <td class="content-aboutme-content-title">이메일</td>
                         </tr>
                         <tr>
                             <td class="content-aboutme-content-content">
-                                <span>dev_daryu@kakao.com</span> 
+                                <span>dev_daryu@kakao.com</span>
                                 <a href="mailto:dev_daryu@kakao.com">
-                                    <img src="./images/content-link-img.svg" width="16px">
+                                    <img src="./images/index/content/aboutme/link/content-aboutme-link-img.svg"
+                                        width="16px" alt="link">
                                 </a>
                             </td>
                         </tr>
@@ -118,7 +124,8 @@
                     <table class="content-aboutme-content-table aboutme-tablet aboutme-desktop aboutme-mobile">
                         <tr>
                             <td class="content-aboutme-content-img" rowspan="2">
-                                <img src="./images/content-aboutme-content-study-img.svg">
+                                <img src="./images/index/content/aboutme/content-aboutme-content-study-img.svg"
+                                    alt="study">
                             </td>
                             <td class="content-aboutme-content-title">학력</td>
                         </tr>
@@ -138,91 +145,143 @@
                         </td>
                     </tr>
                 </table>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">FrontEnd</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-frontend-html5-img.svg">
-                            <img src="./images/content-skills-frontend-css3-img.svg">
-                            <img src="./images/content-skills-frontend-jquery-img.svg">
-                            <img src="./images/content-skills-frontend-js-img.svg">
-                            <img src="./images/content-skills-frontend-typescript-img.svg">
-                            <img src="./images/content-skills-frontend-react-img.svg">
+                <div class="content-skills-flex">
+                    <div class="content-skills-box skills-mobile skills-tablet skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">FrontEnd</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-html5-img.svg"
+                                    alt="html5">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-css3-img.svg"
+                                    alt="css3">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-jquery-img.svg"
+                                    alt="jquery">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-js-img.svg"
+                                    alt="javascript">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-typescript-img.svg"
+                                    alt="typescript">
+                                <img src="./images/index/content/skills/frontend/content-skills-frontend-react-img.svg"
+                                    alt="react">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skills-box skills-mobile skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">BackEnd</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/backend/content-skills-backend-python-img.svg"
+                                    alt="python">
+                                <img src="./images/index/content/skills/backend/content-skills-backend-mysql-img.svg"
+                                    alt="mysql">
+                                <img src="./images/index/content/skills/backend/content-skills-backend-java-img.svg"
+                                    alt="java">
+                                <img src="./images/index/content/skills/backend/content-skills-backend-php-img.svg"
+                                    alt="php">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skills-box skills-mobile skills-tablet skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">Version Control</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/versioncontrol/content-skills-versioncontrol-git-img.svg"
+                                    alt="git">
+                                <img src="./images/index/content/skills/versioncontrol/content-skills-versioncontrol-github-img.svg"
+                                    alt="github">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skills-box skills-mobile skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">Mobile App</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/mobileapp/content-skills-mobileapp-java-img.svg"
+                                    alt="java">
+                                <img src="./images/index/content/skills/mobileapp/content-skills-mobileapp-kotlin-img.svg"
+                                    alt="kotlin">
+                                <img src="./images/index/content/skills/mobileapp/content-skills-mobileapp-swift-img.svg"
+                                    alt="swift">
+                                <img src="./images/index/content/skills/mobileapp/content-skills-mobileapp-reactnative-img.svg"
+                                    alt="react_native">
+                                <img src="./images/index/content/skills/mobileapp/content-skills-mobileapp-flutter-img.svg"
+                                    alt="flutter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skills-box skills-mobile skills-tablet skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">Deployment</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/deployment/content-skills-deployment-firebase-img.svg"
+                                    alt="firebase">
+                                <img src="./images/index/content/skills/deployment/content-skills-deployment-aws-img.svg"
+                                    alt="aws">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-skills-box skills-mobile skills-desktop">
+                        <div class="content-skills-boxs">
+                            <p class="content-skills-box-title">Communication</p>
+                            <hr class="content-skills-box-border">
+                            <div class="content-skills-box-div">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-xd-img.svg"
+                                    alt="xd">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-office-img.svg"
+                                    alt="office">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-notion-img.svg"
+                                    alt="notion">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-discord-img.svg"
+                                    alt="discord">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-telegram-img.svg"
+                                    alt="telegram">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-zoom-img.svg"
+                                    alt="zoom">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-teams-img.svg"
+                                    alt="teams">
+                                <img src="./images/index/content/skills/communication/content-skills-communication-skype-img.svg"
+                                    alt="skype">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">BackEnd</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-backend-python-img.svg">
-                            <img src="./images/content-skills-backend-mysql-img.svg">
-                            <img src="./images/content-skills-backend-java-img.svg">
-                            <img src="./images/content-skills-backend-php-img.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">Version Control</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-versioncontrol-git-img.svg">
-                            <img src="./images/content-skills-versioncontrol-github-img.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">Mobile App</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-mobileapp-java-img.svg">
-                            <img src="./images/content-skills-mobileapp-kotlin-img.svg">
-                            <img src="./images/content-skills-mobileapp-swift-img.svg">
-                            <img src="./images/content-skills-mobileapp-reactnative-img.svg">
-                            <img src="./images/content-skills-mobileapp-flutter-img.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">Deployment</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-deployment-firebase-img.svg">
-                            <img src="./images/content-skills-deployment-aws-img.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-skills-box skills-mobile">
-                    <div class="content-skills-box-frontend">
-                        <p class="content-skills-box-title">Communication</p>
-                        <hr class="content-skills-box-border">
-                        <div class="content-skills-box-div">
-                            <img src="./images/content-skills-communication-xd-img.svg">
-                            <img src="./images/content-skills-communication-office-img.svg">
-                            <img src="./images/content-skills-communication-notion-img.svg">
-                            <img src="./images/content-skills-communication-discord-img.svg">
-                            <img src="./images/content-skills-communication-telegram-img.svg">
-                            <img src="./images/content-skills-communication-zoom-img.svg">
-                            <img src="./images/content-skills-communication-teams-img.svg">
-                            <img src="./images/content-skills-communication-skype-img.svg">
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="content-archiving">
+            <div class="content-archive">
                 <table class="content-title">
                     <tr>
                         <td class="content-aboutme-title-main">
-                            <p class="content-title-text">ARCHIVING</p>
+                            <p class="content-title-text">ARCHIVE</p>
                             <hr>
                         </td>
                     </tr>
                 </table>
+                <div class="content-archive-flex">
+                    <div class="content-archive-box archive-desktop">
+                        <div class="content-archive-github">
+                            <div class="content-archive-github-title-box">
+                                <img class="content-archive-github-img"
+                                    src="./images/index/content/archive/content-archive-github-img.svg" alt="Github">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="content-archive-github-content-box">
+                                <a href="https://github.com/Daryu-Kim">GitHub로 이동</a>
+                                <p><b>소스 코드 저장소</b>입니다.</p>
+                                <ul>
+                                    <li>Project, Web, App의 소스 코드</li>
+                                    <li>코딩 연습 및 기능 테스트 용도로 끄적이던 소스 코드</li>
+                                    <li>개인 과외, 국비지원 수업 중 진행한 개인 & 팀 프로젝트 소스 코드</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-archive-blog">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content-projects">
                 <table class="content-title">
@@ -237,7 +296,7 @@
 
             <div>
                 <a class="content-pageup">
-                    <img src="./images/content-pageup-img.svg" alt="pageup">
+                    <img src="./images/index/content/pageup/content-pageup-img.svg" alt="pageup">
                 </a>
             </div>
         </div>
@@ -245,13 +304,16 @@
         <div class="footer">
             <div class="footer-link">
                 <a href="https://github.com/Daryu-Kim">
-                    <img class="footer-link-img" src="./images/footer-link-github-img.svg" alt="Github">
+                    <img class="footer-link-img" src="./images/index/footer/link/footer-link-github-img.svg"
+                        alt="Github">
                 </a>
                 <a href="https://www.instagram.com/ii_devkim">
-                    <img class="footer-link-img" src="./images/footer-link-instagram-img.svg" alt="Instagram">
+                    <img class="footer-link-img" src="./images/index/footer/link/footer-link-instagram-img.svg"
+                        alt="Instagram">
                 </a>
                 <a href="https://www.twitter.com/DaryuKim">
-                    <img class="footer-link-img" src="./images/footer-link-twitter-img.svg" alt="Twitter">
+                    <img class="footer-link-img" src="./images/index/footer/link/footer-link-twitter-img.svg"
+                        alt="Twitter">
                 </a>
             </div>
             <div class="footer-copyright">

@@ -16,6 +16,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Pretendard';
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -67,7 +69,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0.75) 90%), url("../images/content-summary-bg.jpg") 50% no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0.75) 90%), url("../images/index/content/summary/content-summary-bg.jpg") 50% no-repeat;
 }
 
 .content-summary-title {
@@ -106,6 +108,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 72px;
+    cursor: pointer;
 }
 
 .content-summary-btn-text {
@@ -195,16 +198,22 @@ hr {
     padding-bottom: 64px;
 }
 
+.content-skills-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .content-skills-box {
     background-color: #101010;
     border-radius: 16px;
-    padding: 5%;
     box-shadow: 8px 8px 16px #202020;
+    transition: all .2s ease-in-out;
+    margin-bottom: 64px;
 }
 
-.content-skills-box-title {
-    font-size: 24px;
-    font-weight: 700;
+.content-skills-box:hover {
+    transform: translateY(12px);
 }
 
 .content-skills-box-border {
@@ -215,9 +224,39 @@ hr {
     text-align: center;
 }
 
-/* CONTENT-ARCHIVING */
-.content-archiving {
+/* CONTENT-ARCHIVE */
+.content-archive {
     background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);    height: fit-content;
+}
+
+.content-archive-flex {
+    padding-bottom: 64px;
+}
+
+.content-archive-github {
+    background-color: #101010;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #202020;
+    transition: all .2s ease-in-out;
+    margin-bottom: 64px;
+}
+
+.content-archive-github:hover {
+    transform: translateY(12px);
+}
+
+.content-archive-github-title-box {
+    display: flex;
+    align-items: center;
+}
+
+.content-archive-github-img {
+    width: 56px;
+}
+
+.content-archive-github-title-box p {
+    margin-left: 12px;
+    font-size: 36px;
 }
 
 /* CONTENT-PROJECTS */
@@ -252,7 +291,7 @@ hr {
 
 @media (max-width: 767px) {
     .content-title-text {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .content-aboutme-content {
@@ -272,22 +311,40 @@ hr {
     }
     /* CONTENT-SKILLS */
     .content-skills-box {
-        margin: 0 12.5%;
+        margin: 0 15%;
+        padding: 48px;
+    }
+
+    .content-skills-box-title {
+        font-size: 24px;
+        font-weight: 700;
     }
 
     .content-skills-box-div img {
         width: 30%;
+        padding: 12px;
     }
 
     .skills-mobile {
         margin-bottom: 64px;
     }
 
+    /* CONTENT-ARCHIVE */
+    .content-archive-github {
+        margin: 0 15%;
+        padding: 48px;
+        line-height: 32px;
+    }
+
+    .archive-mobile {
+        margin-bottom: 64px;
+    }
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 960px) {
     .content-title-text {
-        font-size: 32px;
+        font-size: 40px;
     }
     
     .content-aboutme-content-table {
@@ -305,11 +362,36 @@ hr {
     .aboutme-tablet {
         margin-bottom: 64px;
     }
+    /* CONTENT-SKILLS */
+    .content-skills-flex {
+        justify-content: center;
+        padding: 0 5%;
+        width: fit-content;
+    }
+
+    .content-skills-box {
+        width: 35%;
+        padding: 36px;
+    }
+
+    .content-skills-box-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .content-skills-box-div img {
+        width: 25%;
+        padding: 16px;
+    }
+
+    .skills-tablet {
+        margin-right: 48px;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 961px) {
     .content-title-text {
-        font-size: 36px;
+        font-size: 48px;
     }
     
     .content-aboutme-content-table {
@@ -326,5 +408,30 @@ hr {
 
     .aboutme-desktop {
         margin-bottom: 64px;
+    }
+    /* CONTENT-SKILLS */
+    .content-skills-flex {
+        justify-content: center;
+        padding: 0 2.5%;
+        width: fit-content;
+    }
+
+    .content-skills-box {
+        width: 20%;
+        padding: 36px;
+    }
+
+    .content-skills-box-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .content-skills-box-div img {
+        width: 25%;
+        padding: 16px;
+    }
+
+    .skills-desktop {
+        margin: 24px;
     }
 }
