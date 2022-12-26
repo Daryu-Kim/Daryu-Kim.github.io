@@ -5,11 +5,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Pretendard';
 }
+
 
 body {
     background-color: white;
@@ -47,6 +55,10 @@ body {
 }
 
 /* CONTENT */
+.content {
+    position: relative;
+}
+
 /* CONTENT-SUMMARY */
 .content-summary {
     width: 100%;
@@ -101,36 +113,37 @@ body {
     font-weight: bold;
 }
 
-/* CONTENT-ABOUTME */
-.content-aboutme {
-    background-color: #101010;
-    height: fit-content;
+/* CONTENT */
+.content-pageup {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 8px;
+    background-color: rgba(60, 60, 60, 0.5);
+    cursor: pointer;
 }
 
-.content-aboutme-title {
+/* CONTENT-GENERAL */
+.content-title {
     margin: auto;
     padding: 64px 0;
-    /* width: fit-content; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.content-aboutme-title-main {
-    vertical-align: middle;
-    text-align: center;
+hr {
+    margin-top: 6px;
+    border: solid #FFF;
+    height: 3px;
 }
 
-.content-aboutme-title-img {
-    margin-right: 12px;
-    width: 28px;
+.content-title-text {
+    font-family: 'RixInooAriDuriR';
 }
 
-.content-aboutme-title-text {
-    font-weight: 900;
-    /* font-size: 3.25vmax; */
-    border-bottom: 1.5px solid #444;
-    font-size: 28px;
+/* CONTENT-ABOUTME */
+.content-aboutme {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    height: fit-content;
 }
 
 .content-aboutme-content {
@@ -138,8 +151,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
 }
 
 .content-aboutme-content-table {
@@ -149,13 +160,17 @@ body {
 }
 
 .content-aboutme-content-img {
-    width: 36px;
     text-align: end;
 }
 
 .content-aboutme-content-img img {
     width: 36px;
     margin-right: 24px;
+}
+
+.img-bigsize img {
+    width: 28px;
+    padding: 4px;
 }
 
 .content-aboutme-content-title,
@@ -171,13 +186,33 @@ body {
 
 .content-aboutme-content-content {
     font-size: 16px;
-    word-break: break-all;
 }
 
 /* CONTENT-SKILLS */
 .content-skills {
     background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
     height: fit-content;
+    padding-bottom: 64px;
+}
+
+.content-skills-box {
+    background-color: #101010;
+    border-radius: 16px;
+    padding: 5%;
+    box-shadow: 8px 8px 16px #202020;
+}
+
+.content-skills-box-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-skills-box-border {
+    margin-bottom: 24px;
+}
+
+.content-skills-box-div {
+    text-align: center;
 }
 
 /* CONTENT-ARCHIVING */
@@ -216,8 +251,16 @@ body {
 }
 
 @media (max-width: 767px) {
+    .content-title-text {
+        font-size: 28px;
+    }
+
+    .content-aboutme-content {
+        padding: 10%, 0;
+    }
+
     .content-aboutme-content-table {
-        width: 80%;
+        width: 75%;
     }
 
     .content-aboutme-title-text {
@@ -227,12 +270,28 @@ body {
     .aboutme-mobile {
         margin-bottom: 64px;
     }
+    /* CONTENT-SKILLS */
+    .content-skills-box {
+        margin: 0 12.5%;
+    }
+
+    .content-skills-box-div img {
+        width: 30%;
+    }
+
+    .skills-mobile {
+        margin-bottom: 64px;
+    }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .content-title-text {
+        font-size: 32px;
+    }
+    
     .content-aboutme-content-table {
-        width: 40%;
+        width: 47.5%;
     }
 
     .content-aboutme-title-img {
@@ -249,8 +308,12 @@ body {
 }
 
 @media (min-width: 992px) {
+    .content-title-text {
+        font-size: 36px;
+    }
+    
     .content-aboutme-content-table {
-        width: 30%;
+        width: 31.7%;
     }
 
     .content-aboutme-title-img {

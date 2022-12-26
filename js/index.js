@@ -1,7 +1,5 @@
-const content_aboutme_scroll_btn = document.getElementById('content-aboutme-a');
+let topBtn = document.querySelector(".content-pageup");
 
-var content_aboutme_scroll_btn_clickListener = function() {
-    content_aboutme_scroll_btn.scrollIntoView(true);
-}
-
-content_aboutme_scroll_btn.addEventListener('click', content_aboutme_scroll_btn_clickListener);
+topBtn.onclick = () => window.scrollTo({top:0, behavior: "smooth" });
+window.onscroll = () => window.scrollY > 500? topBtn.getElementsByClassName.opacity = 1 :
+topBtn.getElementsByClassName.opacity = 0
