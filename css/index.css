@@ -221,6 +221,7 @@ hr {
 }
 
 .content-skills-box {
+    margin: 0 28px;
     background-color: #101010;
     border-radius: 16px;
     box-shadow: 8px 8px 16px #202020;
@@ -257,6 +258,9 @@ hr {
     box-shadow: 8px 8px 16px #202020;
     transition: all .2s ease-in-out;
     margin-bottom: 64px;
+    margin: 0 28px;
+    padding: 36px;
+    word-break: keep-all;
 }
 
 .content-archive-github:hover, .content-archive-blog:hover {
@@ -369,7 +373,6 @@ hr {
 
     /* CONTENT-SKILLS */
     .content-skills-box {
-        margin: 0 15%;
         padding: 36px;
         width: 100%;
     }
@@ -389,14 +392,6 @@ hr {
     }
 
     /* CONTENT-ARCHIVE */
-
-    .content-archive-github,
-    .content-archive-blog {
-        margin: 0 15%;
-        padding: 36px;
-        word-break: keep-all;
-    }
-
     .content-archive-github {
         margin-bottom: 64px;
     }
@@ -433,7 +428,7 @@ hr {
     .content-skills-box {
         width: 35%;
         padding: 36px;
-        margin: 24px;
+        margin: 28px;
     }
 
     .content-skills-box-title {
@@ -493,5 +488,11 @@ hr {
 
     .skills-desktop {
         margin: 24px;
+    }
+
+    /* Content-Archive */
+    .content-archive-github,
+    .content-archive-blog {
+        margin: 0 17.5%;
     }
 }
