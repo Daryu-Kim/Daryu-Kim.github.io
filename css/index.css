@@ -322,6 +322,7 @@ hr {
     .content-skills-box {
         margin: 0 15%;
         padding: 36px;
+        width: 100%;
     }
 
     .content-skills-box-title {
