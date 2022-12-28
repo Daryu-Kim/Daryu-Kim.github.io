@@ -287,7 +287,8 @@ hr {
 }
 
 .content-archive-github-content-box-lh {
-    line-height: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .content-archive-github-content-box ul li {
