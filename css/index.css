@@ -40,6 +40,10 @@ body {
     border: solid #101010;
 }
 
+.wrapper {
+    position: relative;
+}
+
 /* HEADER */
 .header {
     background-color: #202020;
@@ -48,6 +52,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
 }
 
 .header-menu {
@@ -58,7 +66,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .header-menu-img {
@@ -153,7 +160,7 @@ hr {
 
 /* CONTENT-ABOUTME */
 .content-aboutme {
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
     background-blend-mode: multiply;
     height: fit-content;
 }
@@ -235,14 +242,16 @@ hr {
 
 /* CONTENT-ARCHIVE */
 .content-archive {
-    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);    height: fit-content;
+    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+    height: fit-content;
 }
 
 .content-archive-flex {
     padding-bottom: 64px;
 }
 
-.content-archive-github {
+.content-archive-github,
+.content-archive-blog {
     background-color: #101010;
     border-radius: 16px;
     box-shadow: 8px 8px 16px #202020;
@@ -260,7 +269,21 @@ hr {
 }
 
 .content-archive-github-img {
-    width: 56px;
+    width: 192px;
+    filter: brightness(100);
+}
+
+.content-archive-tistory-img {
+    width: 216px;
+}
+
+.content-archive-link-img {
+    margin-left: 12px;
+    width: 28px;
+}
+
+.content-archive-link-img:hover {
+    animation: link-hover .4s ease-in-out infinite;
 }
 
 .content-archive-github-title-box p {
@@ -268,9 +291,23 @@ hr {
     font-size: 36px;
 }
 
+.content-archive-github-content-box-lh {
+    line-height: 64px;
+}
+
+.content-archive-github-content-box ul li {
+    margin-left: 20px;
+    line-height: 32px;
+}
+
 /* CONTENT-PROJECTS */
 .content-projects {
     background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+}
+
+/* CONTENT_CAREER */
+.content-career {
+    background-image: linear-gradient(to bottom, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 
 /* FOOTER */
@@ -298,6 +335,21 @@ hr {
     font-size: 14px;
 }
 
+@keyframes link-hover {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.15);
+
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
 @media (max-width: 767px) {
     .content-title-text {
         font-size: 32px;
@@ -318,6 +370,7 @@ hr {
     .aboutme-mobile {
         margin-bottom: 64px;
     }
+
     /* CONTENT-SKILLS */
     .content-skills-box {
         margin: 0 15%;
@@ -340,14 +393,15 @@ hr {
     }
 
     /* CONTENT-ARCHIVE */
-    .content-archive-github {
+
+    .content-archive-github,
+    .content-archive-blog {
         margin: 0 15%;
-        padding: 48px;
-        line-height: 32px;
+        padding: 36px;
         word-break: keep-all;
     }
 
-    .archive-mobile {
+    .content-archive-github {
         margin-bottom: 64px;
     }
 
@@ -357,7 +411,7 @@ hr {
     .content-title-text {
         font-size: 40px;
     }
-    
+
     .content-aboutme-content-table {
         width: 47.5%;
     }
@@ -373,6 +427,7 @@ hr {
     .aboutme-tablet {
         margin-bottom: 64px;
     }
+
     /* CONTENT-SKILLS */
     .content-skills-flex {
         justify-content: center;
@@ -400,7 +455,7 @@ hr {
     .content-title-text {
         font-size: 48px;
     }
-    
+
     .content-aboutme-content-table {
         width: 31.7%;
     }
@@ -416,6 +471,7 @@ hr {
     .aboutme-desktop {
         margin-bottom: 64px;
     }
+
     /* CONTENT-SKILLS */
     .content-skills-flex {
         justify-content: center;
