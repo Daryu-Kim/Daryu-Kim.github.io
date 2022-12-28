@@ -259,22 +259,17 @@ hr {
     margin-bottom: 64px;
 }
 
-.content-archive-github:hover {
+.content-archive-github:hover, .content-archive-blog:hover {
     transform: translateY(12px);
 }
 
-.content-archive-github-title-box {
-    display: flex;
-    align-items: center;
-}
-
 .content-archive-github-img {
-    width: 192px;
+    width: 60%;
     filter: brightness(100);
 }
 
 .content-archive-tistory-img {
-    width: 216px;
+    width: 75%;
 }
 
 .content-archive-link-img {
