@@ -308,6 +308,60 @@ hr {
 /* CONTENT_CAREER */
 .content-career {
     background-image: linear-gradient(to bottom, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    padding-bottom: 64px;
+}
+
+.content-career-div-box-illias {
+    display: flex;
+    flex-direction: column;
+    margin: 0 28px;
+    padding: 36px;
+    background-color: #101010;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #202020;
+    transition: all .2s ease-in-out;
+}
+
+.content-career-div-box-illias:hover {
+    transform: translateY(12px);
+}
+
+.content-career-div-box-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.content-career-div-box-img {
+    width: 216px;
+    border-radius: 108px;
+    border: 4px solid #333;
+    align-self: center;
+    margin-bottom: 24px;
+}
+
+.content-career-div-box-since,
+.content-career-div-box-worksince {
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.content-career-div-box-companysinf {
+    margin-bottom: 16px;
+}
+
+.content-career-hr {
+    border: 1px solid grey;
+    margin: 16px 0;
+}
+
+.content-career-div-box-worktitle {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.content-career-div-box-workinf {
+    margin-left: 20px;
 }
 
 /* FOOTER */
