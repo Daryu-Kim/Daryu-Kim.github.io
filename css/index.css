@@ -20,6 +20,7 @@
     text-decoration: none;
     box-sizing: border-box;
     word-break: keep-all;
+    transition: all .4s;
 }
 
 
@@ -307,7 +308,7 @@ hr {
     padding-bottom: 64px;
 }
 
-.content-career-div-box-illias {
+.content-career-div-box-develoware {
     display: flex;
     flex-direction: column;
     margin: 0 28px;
@@ -318,8 +319,14 @@ hr {
     transition: all .2s ease-in-out;
 }
 
-.content-career-div-box-illias:hover {
+.content-career-div-box-develoware:hover {
     transform: translateY(12px);
+}
+
+.content-career-div-box-develoware-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-career-div-box-title {
@@ -351,10 +358,9 @@ hr {
     margin: 16px 0;
 }
 
-.content-career-div-box-worktitle-ul {
+.content-career-div-box-worktitle {
     font-weight: 700;
     margin-bottom: 8px;
-    margin-left: 20px;
 }
 
 .content-career-div-box-worksince {
@@ -500,6 +506,53 @@ hr {
         width: 88px;
         padding: 12px;
     }
+
+    /* CONTENT-ARCHIVE */
+    .content-archive-github,
+    .content-archive-blog {
+        width: 50%;
+    }
+
+    .content-archive-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-archive-github {
+        margin-bottom: 64px;
+    }
+
+    .content-archive-github-img {
+        width: 192px;
+    }
+
+    .content-archive-tistory-img {
+        width: 216px;
+    }
+
+    /* CONTENT-CAREER */
+    .content-career-div-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-career-div-box-develoware {
+        width: 75%;
+        flex-direction: row;
+    }
+
+    .content-career-div-box-develoware-logo {
+        height: 100%;
+        align-items: top;
+    }
+    
+    .content-career-div-box-img {
+        width: 156px;
+        margin-right: 36px;
+    }
 }
 
 @media (min-width: 961px) {
@@ -553,6 +606,41 @@ hr {
     /* Content-Archive */
     .content-archive-github,
     .content-archive-blog {
-        margin: 0 17.5%;
+        width: 32.5%;
+    }
+
+    .content-archive-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-archive-github-img {
+        width: 192px;
+    }
+
+    .content-archive-tistory-img {
+        width: 216px;
+    }
+
+    /* CONTENT-CAREER */
+    .content-career-div-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-career-div-box-develoware {
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .content-career-div-box-develoware-logo {
+        height: 100%;
+        align-items: top;
+    }
+    
+    .content-career-div-box-img {
+        width: 180px;
+        margin-right: 36px;
     }
 }
