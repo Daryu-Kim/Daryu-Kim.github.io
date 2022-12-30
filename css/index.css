@@ -20,7 +20,7 @@
     text-decoration: none;
     box-sizing: border-box;
     word-break: keep-all;
-    transition: all .4s;
+    transition: all .2s;
 }
 
 
@@ -55,6 +55,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    width: 100%;
     left: 0px;
     top: 0px;
     z-index: 1;
@@ -70,6 +71,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.header-menu:hover {
+    background-color: #666;
 }
 
 .header-menu-img {
