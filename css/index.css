@@ -50,7 +50,7 @@ body {
 .header {
     background-color: #202020;
     height: fit-content;
-    padding: 12px 28px;
+    padding: 12px 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,8 @@ body {
     left: 0px;
     top: 0px;
     z-index: 1;
+    box-shadow: 6px 0px 12px black;
+    height: 72px;
 }
 
 .header-menu {
@@ -71,7 +73,14 @@ body {
 }
 
 .header-menu-img {
-    width: 36px;
+    width: 28px;
+}
+
+.header-menu-desktop-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
 }
 
 /* CONTENT */
@@ -265,7 +274,8 @@ hr {
     word-break: keep-all;
 }
 
-.content-archive-github:hover, .content-archive-blog:hover {
+.content-archive-github:hover,
+.content-archive-blog:hover {
     transform: translateY(12px);
 }
 
@@ -417,6 +427,18 @@ hr {
 }
 
 @media (max-width: 767px) {
+    .header-menu {
+        display: flex;
+    }
+
+    .header-menu-desktop {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 20px;
+    }
+
     .content-title-text {
         font-size: 32px;
     }
@@ -465,6 +487,18 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
+    .header-menu {
+        display: flex;
+    }
+
+    .header-menu-desktop {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 22px;
+    }
+
     .content-title-text {
         font-size: 40px;
     }
@@ -548,7 +582,7 @@ hr {
         height: 100%;
         align-items: top;
     }
-    
+
     .content-career-div-box-img {
         width: 156px;
         margin-right: 36px;
@@ -556,6 +590,18 @@ hr {
 }
 
 @media (min-width: 961px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-menu-desktop {
+        display: flex;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
     .content-title-text {
         font-size: 48px;
     }
@@ -638,7 +684,7 @@ hr {
         height: 100%;
         align-items: top;
     }
-    
+
     .content-career-div-box-img {
         width: 180px;
         margin-right: 36px;
