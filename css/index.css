@@ -316,6 +316,42 @@ hr {
 /* CONTENT-PROJECTS */
 .content-projects {
     background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+    padding-bottom: 64px;
+}
+
+.content-projects-div-box-everyone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 28px;
+    padding: 36px;
+    background-color: #101010;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px #202020;
+    transition: all .2s ease-in-out;
+}
+
+.content-projects-div-box-everyone:hover {
+    transform: translateY(12px);
+}
+
+.content-projects-div-box-everyone-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-projects-div-box-title {
+    font-size: 24px;
+}
+
+.content-projects-div-box-img {
+    width: 128px;
+    border-radius: 50%;
+    background-color: #555;
+    padding: 36px;
+    border: 4px solid #333;
+    align-self: center;
+    margin-bottom: 24px;
 }
 
 /* CONTENT_CAREER */
