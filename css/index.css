@@ -698,6 +698,11 @@ hr {
     }
 
     /* CONTENT_PROJECTS */
+    .content-projects-div {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
     .content-projects-div-box-title {
         font-size: 32px;
     }
@@ -805,13 +810,30 @@ hr {
     }
 
     /* CONTENT_PROJECTS */
+    .content-projects-div {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .content-projects-div-box-title {
         font-size: 40px;
     }
 
+    .content-projects-div-box-pc {
+        display: flex;
+    }
+
+    .content-projects-div-box-slide {
+        width: 35%;
+        margin-right: 36px;
+    }
+
+    .content-projects-div-box-infbox {
+        width: 65%;
+    }
+
     .content-projects-div-box-stack {
         display: flex;
-        justify-content: flex-end;
     }
 
     .content-projects-div-box-stack-title {
