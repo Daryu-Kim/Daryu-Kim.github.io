@@ -63,6 +63,10 @@ body {
     height: 72px;
 }
 
+.header-title {
+    z-index: 2;
+}
+
 .header-menu {
     width: 48px;
     height: 48px;
@@ -71,15 +75,96 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .header-menu:hover {
-    background-color: #666;
+    background-color: #444;
 }
 
-.header-menu-img {
-    width: 28px;
+.header-menu-checkbox {
+    display: none;
+}
+
+.header-menu-checkbox + label {
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header-menu-checkbox + label > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+.header-menu-checkbox + label > span:nth-child(1) {
+    top: 0;
+}
+
+.header-menu-checkbox:checked + label > span:nth-child(1) {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(45deg);
+}
+
+.header-menu-checkbox + label > span:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header-menu-checkbox:checked + label > span:nth-child(2) {
+    opacity: 0;
+}
+
+.header-menu-checkbox + label > span:nth-child(3) {
+    bottom: 0;
+}
+
+.header-menu-checkbox:checked + label > span:nth-child(3) {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(-45deg);
+}
+
+.header-menu-drop {
+    position: fixed;
+    width: 100%;
+    height: 284px;
+    z-index: 1;
+    top: -280px;
+    left: 0;
+    background-color: #202020;
+}
+
+.header-menu-drop hr {
+    margin: 0;
+    border: 2px solid #333;
+}
+
+.header-menu-drop ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.header-menu-drop ul li {
+    line-height: 56px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header-menu-drop ul li a:hover {
+    text-shadow: 0px 0px 4px white;
+}
+
+.header-menu-checkbox:checked + label + .header-menu-drop {
+    top: 72px;
 }
 
 .header-menu-desktop-ul {
@@ -87,6 +172,10 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 400px;
+}
+
+.header-menu-desktop-li a:hover {
+    text-shadow: 0px 0px 4px white;
 }
 
 /* CONTENT */
