@@ -1,4 +1,6 @@
 let topBtn = document.querySelector(".content-pageup");
+const header = document.getElementById("header");
+const header_bar = document.getElementById("header-bar");
 const drop_menu = document.getElementById("header-menu-drop");
 const drop_menu_btn = document.querySelectorAll("#header-menu-drop-btn-1, #header-menu-drop-btn-2, #header-menu-drop-btn-3, #header-menu-drop-btn-4, #header-menu-drop-btn-5");
 const header_menu_checkbox = document.getElementById("header-menu-checkbox");
@@ -18,21 +20,36 @@ function DropMenuClickListener() {
 
 // Responsive Layout Functions
 ResponsiveResize();
+ResponsiveTop();
+
 window.addEventListener("resize", ResponsiveResize);
-// window.addEventListener("scroll", ResponsiveTop);
+window.addEventListener("resize", ResponsiveTop);
+window.addEventListener("scroll", ResponsiveTop);
 
 function ResponsiveResize() {
     if (window.innerWidth >= 961) {
         drop_menu.style.display = "none";
         header_menu_label.style.display = "none";
     } else {
-        drop_menu.style.display = "flex";
-        header_menu_label.style.display = "flex";
+        drop_menu.style.display = "block";
+        header_menu_label.style.display = "block";
     }
 }
 
 function ResponsiveTop() {
-    if (document.body.scrollTop === 0) {
-        alert('hi');
+    if (window.innerWidth >= 961) {
+        if (header.offsetTop === 0) {
+            header.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            header_bar.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            header.style.boxShadow = "0";
+        } else {
+            header.style.backgroundColor = "#202020";
+            header_bar.style.backgroundColor = "#202020";
+            header.style.boxShadow = "6px 0px 12px black";
+        }
+    } else {
+        header.style.backgroundColor = "#202020";
+        header_bar.style.backgroundColor = "#202020";
+        header.style.boxShadow = "6px 0px 12px black";
     }
 }
