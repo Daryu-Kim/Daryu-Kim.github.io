@@ -427,7 +427,7 @@ hr {
     padding-bottom: 64px;
 }
 
-.content-projects-div-box-everyone {
+.content-projects-div-box-card {
     display: flex;
     flex-direction: column;
     margin: 0 28px;
@@ -436,10 +436,15 @@ hr {
     border-radius: 16px;
     box-shadow: 8px 8px 16px #202020;
     transition: all .2s ease-in-out;
+    margin-bottom: 64px;
 }
 
-.content-projects-div-box-everyone:hover {
+.content-projects-div-box-card:hover {
     transform: translateY(12px);
+}
+
+.card-last {
+    margin-bottom: 0;
 }
 
 .content-projects-div-box-title {
