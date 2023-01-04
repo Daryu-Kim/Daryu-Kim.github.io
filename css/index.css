@@ -542,6 +542,11 @@ hr {
     margin-bottom: 16px;
 }
 
+.content-projects-div-box-stack div {
+    display: flex;
+    align-items: center;
+}
+
 .content-projects-div-box-stack-title {
     border-left: 5px solid white;
     padding-left: 8px;
