@@ -43,13 +43,13 @@ function ResponsiveTop() {
             header_bar.style.backgroundColor = "rgba(0, 0, 0, 0)";
             header.style.boxShadow = "0";
         } else {
-            header.style.backgroundColor = "#202020";
-            header_bar.style.backgroundColor = "#202020";
+            header.style.backgroundColor = "#151515";
+            header_bar.style.backgroundColor = "#151515";
             header.style.boxShadow = "6px 0px 12px black";
         }
     } else {
-        header.style.backgroundColor = "#202020";
-        header_bar.style.backgroundColor = "#202020";
+        header.style.backgroundColor = "#151515";
+        header_bar.style.backgroundColor = "#151515";
         header.style.boxShadow = "6px 0px 12px black";
     }
 }
