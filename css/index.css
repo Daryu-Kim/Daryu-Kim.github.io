@@ -529,6 +529,25 @@ hr {
     align-items: center;
 }
 
+.img-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
 .content-projects-slide-gps-zoomin-img {
     width: 28px;
     height: 28px;

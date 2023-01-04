@@ -27,6 +27,10 @@ const gps_img_count = 3;
 const gps_img_name = "content-projects-slide-gps-img-";
 const gps_img_png = ".png";
 const gps_img_tag = document.getElementById("content-projects-slide-gps-img");
+const gps_zoomin = document.getElementById("gps-zoomin");
+const img_overlay = document.getElementById("img-overlay");
+const img_overlay_img = document.getElementById("overlay-img");
+let img_fullname = undefined;
 let gps_check = 1;
 
 gps_num.innerText = gps_check + " / " + gps_img_count;
@@ -34,6 +38,49 @@ gps_img_tag.src = gps_img_location + gps_img_name + gps_check + gps_img_png;
 
 gps_left.addEventListener('click', SlideLeft);
 gps_right.addEventListener('click', SlideRight);
+gps_zoomin.addEventListener('click', SlideZoomIN);
+img_overlay.addEventListener('click', Overlay);
+
+function Overlay() {
+    img_overlay.animate([
+        {
+            opacity: 1
+        },
+
+        {
+            opacity: 0
+        },
+
+        {
+            easing: "ease-in-out"
+        }
+        
+    ], 400);
+    setTimeout(
+        function() {
+            img_overlay.style.display = 'none';
+        }, 200);
+}
+
+function SlideZoomIN() {
+    img_fullname = gps_img_location + gps_img_name + gps_check + gps_img_png;
+    img_overlay.style.display = 'flex';
+    img_overlay.animate([
+        {
+            opacity: 0
+        },
+
+        {
+            opacity: 1
+        },
+
+        {
+            easing: "ease-in-out"
+        }
+        
+    ], 400);
+    img_overlay_img.src = img_fullname;
+}
 
 function SlideLeft() {
     if (gps_check === 1) {
