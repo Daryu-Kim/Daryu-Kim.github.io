@@ -476,50 +476,52 @@ hr {
     width: 100%;
 }
 
+.content-projects-div-box-slide-canvas-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content-projects-div-box-slide-canvas-left {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 8px;
     width: 48px;
-    left: 0px;
-    z-index: 10;
+    height: 48px;
     cursor: pointer;
 }
 
 .content-projects-div-box-slide-canvas-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 8px;
     width: 48px;
-    right: 0px;
-    z-index: 10;
+    height: 48px;
     cursor: pointer;
 }
 
 .content-projects-div-box-slide-canvas-img {
-    width: 70%;
+    width: 90%;
     margin: auto;
-}
-
-.content-projects-div-box-slide-radiogroup {
     display: flex;
-    width: 128px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    z-index: 10;
+    margin-bottom: 16px;
+    background: #202020;
+    border: 3px solid #151515;
+    border-radius: 16px;
+    padding: 8px;
 }
 
-.content-projects-div-box-slide-radiogroup div {
-    background-color: #202020;
-    width: 36px;
-    height: 16px;
-    border-radius: 8px;
-    cursor: pointer;
+.content-projects-div-box-slide-canvas-img img {
+    width: 100%;
+    height: 40vw;
+    object-fit: contain;
+}
+
+.content-projects-div-box-slide-canvas-num {
+    text-align: center;
 }
 
 .content-projects-div-box-inf {
     font-size: 16px;
+    line-height: 24px;
 }
 
 .content-projects-div-box-inf-btn {
@@ -553,6 +555,11 @@ hr {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 8px;
+}
+
+.inf-github {
+    filter: brightness(100);
+    margin-left: 10px;
 }
 
 /* CONTENT_CAREER */
@@ -942,13 +949,19 @@ hr {
         display: flex;
     }
 
+    .content-projects-div-box-slide-canvas-img img {
+        width: 100%;
+        height: 20vw;
+        object-fit: contain;
+    }
+
     .content-projects-div-box-slide {
-        width: 35%;
+        width: 40%;
         margin-right: 36px;
     }
 
     .content-projects-div-box-infbox {
-        width: 65%;
+        width: 60%;
     }
 
     .content-projects-div-box-stack {
@@ -956,7 +969,12 @@ hr {
     }
 
     .content-projects-div-box-stack-title {
-        width: 84px;
+        width: 25%;
+        height: 100%;
+    }
+
+    .content-projects-div-box-stack-inf {
+        width: 75%;
     }
 
     /* CONTENT-CAREER */

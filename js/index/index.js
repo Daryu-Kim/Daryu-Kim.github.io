@@ -18,6 +18,69 @@ function DropMenuClickListener() {
     header_menu_checkbox.checked = false;
 }
 
+// Projects -> GPS App Slide Functions
+const gps_left = document.getElementById("content-projects-slide-gps-left");
+const gps_right = document.getElementById("content-projects-slide-gps-right");
+const gps_num = document.getElementById("gps-num");
+const gps_img_location = "../images/index/content/projects/GPS/";
+const gps_img_count = 3;
+const gps_img_name = "content-projects-slide-gps-img-";
+const gps_img_png = ".png";
+const gps_img_tag = document.getElementById("content-projects-slide-gps-img");
+let gps_check = 1;
+
+gps_num.innerText = gps_check + " / " + gps_img_count;
+gps_img_tag.src = gps_img_location + gps_img_name + gps_check + gps_img_png;
+
+gps_left.addEventListener('click', SlideLeft);
+gps_right.addEventListener('click', SlideRight);
+
+function SlideLeft() {
+    if (gps_check === 1) {
+        gps_check = 3;
+        SlideIMGChange(gps_check);
+    } else if (gps_check === 2) {
+        gps_check = 1;
+        SlideIMGChange(gps_check);
+    } else {
+        gps_check = 2;
+        SlideIMGChange(gps_check);
+    }
+}
+
+function SlideRight() {
+    if (gps_check === 1) {
+        gps_check = 2;
+        SlideIMGChange(gps_check);
+    } else if (gps_check === 2) {
+        gps_check = 3;
+        SlideIMGChange(gps_check);
+    } else {
+        gps_check = 1;
+        SlideIMGChange(gps_check);
+    }
+}
+
+function SlideIMGChange(num) {
+    gps_num.innerText = num + " / " + gps_img_count;
+    gps_img_tag.src = gps_img_location + gps_img_name + num + gps_img_png;
+    gps_img_tag.animate([
+        {
+            transform: 'scale(0)'
+        },
+
+        {
+            transform: 'scale(1)'
+        },
+
+        {
+            easing: "ease-in-out"
+        }
+        
+    ], 400);
+}
+
+
 // Responsive Layout Functions
 ResponsiveResize();
 ResponsiveTop();
