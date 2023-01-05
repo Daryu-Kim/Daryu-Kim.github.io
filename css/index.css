@@ -38,6 +38,10 @@ body {
     -moz-user-select: none;
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
 .text-black {
     color: #101010;
 }
@@ -529,7 +533,7 @@ hr {
     align-items: center;
 }
 
-.img-overlay {
+.overlay {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -542,10 +546,54 @@ hr {
     align-items: center;
 }
 
-.img-overlay-img {
+.overlay-img {
     width: 80%;
     height: 80%;
     object-fit: contain;
+}
+
+.overlay-addi, .overlay-img {
+    display: none;
+}
+
+.overlay-addi {
+    background-color: #101010;
+    border-radius: 16px;
+    padding: 36px;
+    width: 80%;
+    word-break: keep-all;
+}
+
+.overlay-addi-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.overlay-addi-hr {
+    border: 0;
+    border-bottom: 2px solid white;
+    margin: 36px 0;
+}
+
+.overlay-addi-deployment-title,
+.overlay-addi-summary-title,
+.overlay-addi-background-title,
+.overlay-addi-meaning-title,
+.overlay-addi-technology-title,
+.overlay-addi-environment-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.overlay-addi-summary-content-function-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.overlay-addi-deployment-content {
+    text-decoration: underline;
+    color: #00F;
 }
 
 .content-projects-slide-gps-zoomin-img {

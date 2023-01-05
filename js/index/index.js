@@ -1,10 +1,50 @@
-let topBtn = document.querySelector(".content-pageup");
+// Variables Declare
+// HEADER Declare
 const header = document.getElementById("header");
 const header_bar = document.getElementById("header-bar");
 const drop_menu = document.getElementById("header-menu-drop");
 const drop_menu_btn = document.querySelectorAll("#header-menu-drop-btn-1, #header-menu-drop-btn-2, #header-menu-drop-btn-3, #header-menu-drop-btn-4, #header-menu-drop-btn-5");
 const header_menu_checkbox = document.getElementById("header-menu-checkbox");
 const header_menu_label = document.getElementById("header-menu-label");
+
+// CONTENT Declare
+let topBtn = document.querySelector(".content-pageup");
+const overlay = document.getElementById("overlay");
+const overlay_img = document.getElementById("overlay-img");
+const overlay_addi = document.getElementById("overlay-addi");
+let img_fullname = undefined;
+
+// CONTENT Projects Declare
+// CONTENT Projects GPS Declare
+const gps_left = document.getElementById("content-projects-slide-gps-left");
+const gps_right = document.getElementById("content-projects-slide-gps-right");
+const gps_num = document.getElementById("gps-num");
+const gps_img_location = "../images/index/content/projects/GPS/";
+const gps_img_count = 3;
+const gps_img_name = "content-projects-slide-gps-img-";
+const gps_img_png = ".png";
+const gps_img_tag = document.getElementById("content-projects-slide-gps-img");
+const gps_zoomin = document.getElementById("gps-zoomin");
+const gps_addi = document.getElementById("gps-addi");
+let gps_check = 1;
+
+
+// First Settings
+gps_num.innerText = gps_check + " / " + gps_img_count;
+gps_img_tag.src = gps_img_location + gps_img_name + gps_check + gps_img_png;
+
+
+// EventListener
+// CONTENT EventListener
+overlay.addEventListener('click', Overlay);
+
+// GPS EventListener
+gps_left.addEventListener('click', SlideLeft);
+gps_right.addEventListener('click', SlideRight);
+gps_zoomin.addEventListener('click', SlideZoomIN);
+gps_addi.addEventListener('click', GPSAddiON);
+
+
 
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 window.onscroll = () => window.scrollY > 500 ? topBtn.getElementsByClassName.opacity = 1 :
@@ -18,31 +58,13 @@ function DropMenuClickListener() {
     header_menu_checkbox.checked = false;
 }
 
-// Projects -> GPS App Slide Functions
-const gps_left = document.getElementById("content-projects-slide-gps-left");
-const gps_right = document.getElementById("content-projects-slide-gps-right");
-const gps_num = document.getElementById("gps-num");
-const gps_img_location = "../images/index/content/projects/GPS/";
-const gps_img_count = 3;
-const gps_img_name = "content-projects-slide-gps-img-";
-const gps_img_png = ".png";
-const gps_img_tag = document.getElementById("content-projects-slide-gps-img");
-const gps_zoomin = document.getElementById("gps-zoomin");
-const img_overlay = document.getElementById("img-overlay");
-const img_overlay_img = document.getElementById("overlay-img");
-let img_fullname = undefined;
-let gps_check = 1;
+ResponsiveResize();
+ResponsiveTop();
 
-gps_num.innerText = gps_check + " / " + gps_img_count;
-gps_img_tag.src = gps_img_location + gps_img_name + gps_check + gps_img_png;
-
-gps_left.addEventListener('click', SlideLeft);
-gps_right.addEventListener('click', SlideRight);
-gps_zoomin.addEventListener('click', SlideZoomIN);
-img_overlay.addEventListener('click', Overlay);
-
+// Projects GPS Functions
 function Overlay() {
-    img_overlay.animate([
+    document.body.classList.remove('scroll-lock');
+    overlay.animate([
         {
             opacity: 1
         },
@@ -58,14 +80,17 @@ function Overlay() {
     ], 400);
     setTimeout(
         function() {
-            img_overlay.style.display = 'none';
+            overlay.style.display = 'none';
+            overlay_img.style.display = 'none';
+            overlay_addi.style.display = 'none';
         }, 200);
 }
 
-function SlideZoomIN() {
-    img_fullname = gps_img_location + gps_img_name + gps_check + gps_img_png;
-    img_overlay.style.display = 'flex';
-    img_overlay.animate([
+function GPSAddiON() {
+    document.body.classList.add('scroll-lock');
+    overlay.style.display = 'flex';
+    overlay_addi.style.display = 'block';
+    overlay.animate([
         {
             opacity: 0
         },
@@ -79,7 +104,34 @@ function SlideZoomIN() {
         }
         
     ], 400);
-    img_overlay_img.src = img_fullname;
+
+    document.getElementById('overlay-addi-title').innerText = "위치 정보 공유 웹앱";
+    document.getElementById('overlay-addi-deployment-content').href =
+    "https://naver.com/";
+    document.getElementById('overlay-addi-deployment-content').innerText =
+    "https://naver.com/"; 
+}
+
+function SlideZoomIN() {
+    document.body.classList.add('scroll-lock');
+    img_fullname = gps_img_location + gps_img_name + gps_check + gps_img_png;
+    overlay.style.display = 'flex';
+    overlay_img.style.display = 'block';
+    overlay.animate([
+        {
+            opacity: 0
+        },
+
+        {
+            opacity: 1
+        },
+
+        {
+            easing: "ease-in-out"
+        }
+        
+    ], 400);
+    overlay_img.src = img_fullname;
 }
 
 function SlideLeft() {
@@ -129,8 +181,6 @@ function SlideIMGChange(num) {
 
 
 // Responsive Layout Functions
-ResponsiveResize();
-ResponsiveTop();
 
 window.addEventListener("resize", ResponsiveResize);
 window.addEventListener("resize", ResponsiveTop);
