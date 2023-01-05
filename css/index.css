@@ -573,17 +573,22 @@ hr {
 .overlay-addi-hr {
     border: 0;
     border-bottom: 2px solid white;
-    margin: 36px 0;
+    margin: 24px 0;
 }
 
 .overlay-addi-deployment-title,
 .overlay-addi-summary-title,
-.overlay-addi-background-title,
+.overlay-addi-function-title,
 .overlay-addi-meaning-title,
-.overlay-addi-technology-title,
-.overlay-addi-environment-title {
+.overlay-addi-technology-title {
     font-weight: 700;
     font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.overlay-addi-deployment-title {
+    margin-top: 0;
 }
 
 .overlay-addi-summary-content-function-title {
@@ -593,7 +598,15 @@ hr {
 
 .overlay-addi-deployment-content {
     text-decoration: underline;
-    color: #00F;
+    color: #88F;
+}
+
+.overlay-addi-deployment-content,
+.overlay-addi-summary-content,
+.overlay-addi-function-content,
+.overlay-addi-meaning-content,
+.overlay-addi-technology-content {
+    font-size: 16px;
 }
 
 .content-projects-slide-gps-zoomin-img {
