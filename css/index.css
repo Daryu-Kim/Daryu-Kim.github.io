@@ -561,52 +561,13 @@ hr {
     border-radius: 16px;
     padding: 36px;
     width: 80%;
+    height: 80%;
     word-break: keep-all;
 }
 
-.overlay-addi-title {
-    text-align: center;
-    font-weight: 900;
-    font-size: 22px;
-}
-
-.overlay-addi-hr {
-    border: 0;
-    border-bottom: 2px solid white;
-    margin: 24px 0;
-}
-
-.overlay-addi-deployment-title,
-.overlay-addi-summary-title,
-.overlay-addi-function-title,
-.overlay-addi-meaning-title,
-.overlay-addi-technology-title {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 8px;
-    margin-top: 24px;
-}
-
-.overlay-addi-deployment-title {
-    margin-top: 0;
-}
-
-.overlay-addi-summary-content-function-title {
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.overlay-addi-deployment-content {
-    text-decoration: underline;
-    color: #88F;
-}
-
-.overlay-addi-deployment-content,
-.overlay-addi-summary-content,
-.overlay-addi-function-content,
-.overlay-addi-meaning-content,
-.overlay-addi-technology-content {
-    font-size: 16px;
+.overlay-addi-object {
+    width: 100%;
+    height: 100%;
 }
 
 .content-projects-slide-gps-zoomin-img {

@@ -45,7 +45,6 @@ gps_zoomin.addEventListener('click', SlideZoomIN);
 gps_addi.addEventListener('click', GPSAddiON);
 
 
-
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 window.onscroll = () => window.scrollY > 500 ? topBtn.getElementsByClassName.opacity = 1 :
     topBtn.getElementsByClassName.opacity = 0;
@@ -104,23 +103,7 @@ function GPSAddiON() {
         }
         
     ], 400);
-
-    document.getElementById('overlay-addi-title').innerText = "위치 정보 공유 웹앱";
-    document.getElementById('overlay-addi-deployment-content').href =
-    "https://naver.com/";
-    document.getElementById('overlay-addi-deployment-content').innerText =
-    "https://naver.com/";
-    document.getElementById('overlay-addi-summary-content').innerText = "asdfasdf";
-    document.getElementById('overlay-addi-meaning-content').innerText = "asdfasdf";
-    document.getElementById('overlay-addi-technology-content').innerText = "asdfasdf";
-    LIAdd("lilililililili");
-}
-
-function LIAdd(value) {
-    const addi_li = document.createElement("li");
-    const addi_li_text = document.createTextNode(value);
-    addi_li.appendChild(addi_li_text);
-    document.getElementById('overlay-addi-function-content').appendChild(addi_li);
+    document.getElementById('overlay-addi').innerHTML = '<object type="text/html" data="./html/overlay-addi-gps.html" class="overlay-addi-object"></object>';
 }
 
 function SlideZoomIN() {

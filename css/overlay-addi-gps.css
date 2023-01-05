@@ -1,0 +1,72 @@
+* {
+    color: white;
+}
+
+p {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 542px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 543px) and (max-width: 695px) {
+    p {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 696px) {
+    
+}
+
+.overlay-addi-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.overlay-addi-hr {
+    border: 0;
+    border-bottom: 2px solid white;
+    margin: 24px 0;
+}
+
+.overlay-addi-deployment-title,
+.overlay-addi-summary-title,
+.overlay-addi-function-title,
+.overlay-addi-meaning-title,
+.overlay-addi-technology-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.overlay-addi-deployment-title {
+    margin-top: 0;
+}
+
+.overlay-addi-summary-content-function-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.overlay-addi-deployment-content {
+    text-decoration: underline;
+    color: #88F;
+}
+
+#addi-li {
+    margin-left: 24px;
+}
+
+.overlay-addi-deployment-content,
+.overlay-addi-summary-content,
+.overlay-addi-function-content,
+.overlay-addi-meaning-content,
+.overlay-addi-technology-content {
+    font-size: 16px;
+}
