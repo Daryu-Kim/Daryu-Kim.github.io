@@ -593,6 +593,7 @@ hr {
     cursor: pointer;
     border-radius: 8px;
     margin: 16px 0;
+    font-weight: 900;
 }
 
 .content-projects-div-box-hr {
