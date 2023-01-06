@@ -1,4 +1,7 @@
 * {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
     color: white;
 }
 
@@ -13,9 +16,13 @@ p {
         font-size: 20px;
     }
 
-    .gps-deployment-title {
+    .gps-general-title {
         font-weight: 700;
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    .gps-general-a-img {
+        width: 160px;
     }
 }
 
@@ -26,9 +33,13 @@ p {
         font-size: 24px;
     }
 
-    .gps-deployment-title {
+    .gps-general-title {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 21px;
+    }
+
+    .gps-general-a-img {
+        width: 192px;
     }
 }
 
@@ -39,9 +50,13 @@ p {
         font-size: 28px;
     }
 
-    .gps-deployment-title {
+    .gps-general-title {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 25px;
+    }
+
+    .gps-general-a-img {
+        width: 240px;
     }
 }
 
