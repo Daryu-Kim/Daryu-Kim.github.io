@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 542px) {
+    body > div {
+        margin-bottom: 36px;
+    }
     .gps-title {
         text-align: center;
         font-weight: 900;
@@ -32,12 +35,12 @@
     .gps-general-content {
         font-size: 15px;
         margin-top: -6px;
-        line-height: 24px;
+        line-height: 26.25px;
     }
 
     .gps-general-content li {
         font-size: 15px;
-        line-height: 24px;
+        line-height: 26.25px;
     }
 
     .gps-general-sub-title {
@@ -47,8 +50,7 @@
 
     .gps-general-sub-content li {
         font-size: 13px;
-        line-height: 24px;
-        margin-top: -12px;
+        line-height: 22.75px;
     }
 
     .gps-general-a-img {
