@@ -21,6 +21,10 @@
         margin-top: -6px;
     }
 
+    .gps-general-content li {
+        font-size: 15px;
+    }
+
     .gps-general-a-img {
         width: 160px;
         margin-top: -8px;
@@ -45,6 +49,10 @@
         margin-top: -8px;
     }
 
+    .gps-general-content li {
+        font-size: 19px;
+    }
+
     .gps-general-a-img {
         width: 192px;
         margin-top: -12px;
@@ -67,6 +75,10 @@
     .gps-general-content {
         font-size: 22px;
         margin-top: -10px;
+    }
+
+    .gps-general-content li {
+        font-size: 22px;
     }
 
     .gps-general-a-img {
