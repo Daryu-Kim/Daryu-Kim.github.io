@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     color: white;
     font-size: 16px;
+    font-family: 'Pretendard';
+    transition: all .3s ease-in-out;
+}
+
+.gps-general-a-img:hover {
+    filter: brightness(1.25);
 }
 
 @media screen and (max-width: 542px) {
@@ -19,10 +32,23 @@
     .gps-general-content {
         font-size: 15px;
         margin-top: -6px;
+        line-height: 24px;
     }
 
     .gps-general-content li {
         font-size: 15px;
+        line-height: 24px;
+    }
+
+    .gps-general-sub-title {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .gps-general-sub-content li {
+        font-size: 13px;
+        line-height: 24px;
+        margin-top: -12px;
     }
 
     .gps-general-a-img {
@@ -53,6 +79,20 @@
         font-size: 19px;
     }
 
+    .gps-general-sub-title {
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .gps-general-sub-content > li {
+        margin: 0;
+        line-height: 28px;
+    }
+
+    .gps-general-sub-content li {
+        font-size: 17px;
+    }
+
     .gps-general-a-img {
         width: 192px;
         margin-top: -12px;
@@ -79,6 +119,15 @@
 
     .gps-general-content li {
         font-size: 22px;
+    }
+
+    .gps-general-sub-title {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .gps-general-sub-content li {
+        font-size: 20px;
     }
 
     .gps-general-a-img {
