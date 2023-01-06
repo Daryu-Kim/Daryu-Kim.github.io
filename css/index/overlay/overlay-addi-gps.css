@@ -3,35 +3,46 @@
 }
 
 p {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 542px) {
-    p {
-        font-size: 24px;
+    .gps-title {
+        text-align: center;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .gps-deployment-title {
+        font-weight: 700;
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 543px) and (max-width: 695px) {
-    p {
-        font-size: 36px;
+    .gps-title {
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+    }
+
+    .gps-deployment-title {
+        font-weight: 700;
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 696px) {
-    
-}
+    .gps-title {
+        text-align: center;
+        font-weight: 900;
+        font-size: 28px;
+    }
 
-.overlay-addi-title {
-    text-align: center;
-    font-weight: 900;
-    font-size: 22px;
-}
-
-.overlay-addi-hr {
-    border: 0;
-    border-bottom: 2px solid white;
-    margin: 24px 0;
+    .gps-deployment-title {
+        font-weight: 700;
+        font-size: 24px;
+    }
 }
 
 .overlay-addi-deployment-title,
