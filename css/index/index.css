@@ -215,7 +215,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0.75) 90%), url("../images/index/content/summary/content-summary-bg.jpg") 50% no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0.75) 90%), url("/images/index/content/summary/content-summary-bg.jpg") 50% no-repeat;
 }
 
 .content-summary-title {
