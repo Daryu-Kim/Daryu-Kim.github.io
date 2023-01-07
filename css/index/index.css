@@ -38,6 +38,13 @@ body {
     -moz-user-select: none;
 }
 
+i {
+    width: 40px;
+    font-size: 36px;
+    text-align: center;
+    margin-right: 24px;
+}
+
 .scroll-lock {
     overflow: hidden;
 }
@@ -309,17 +316,8 @@ hr {
 }
 
 .content-aboutme-content-img {
+    width: fit-content;
     text-align: end;
-}
-
-.content-aboutme-content-img img {
-    width: 36px;
-    margin-right: 24px;
-}
-
-.img-bigsize img {
-    width: 28px;
-    padding: 4px;
 }
 
 .content-aboutme-content-title,
@@ -761,11 +759,11 @@ hr {
     }
 
     .content-aboutme-content {
-        padding: 10%, 0;
+        margin: 0 28px;
     }
 
     .content-aboutme-content-table {
-        width: 75%;
+        width: 100%;
     }
 
     .content-aboutme-title-text {
